@@ -91,12 +91,49 @@
                     <view key="view" contentMode="scaleToFill" id="dp5-c5-ua2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="YLz-x6-NXA">
+                                <rect key="frame" x="122.5" y="191" width="75" height="186"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mt3-2P-l41">
+                                        <rect key="frame" x="0.0" y="0.0" width="75" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sH-gg-ak1">
+                                        <rect key="frame" x="0.0" y="50.5" width="75" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ae-Ku-4lz">
+                                        <rect key="frame" x="0.0" y="101" width="75" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ywz-HO-C0X">
+                                        <rect key="frame" x="0.0" y="151.5" width="75" height="34.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="WOM-Im-jSx"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="YLz-x6-NXA" firstAttribute="centerX" secondItem="dp5-c5-ua2" secondAttribute="centerX" id="Hr7-tl-ig0"/>
+                            <constraint firstItem="YLz-x6-NXA" firstAttribute="centerY" secondItem="dp5-c5-ua2" secondAttribute="centerY" id="MXh-y4-0hK"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Вопрос №" id="Ote-W3-dC5"/>
+                    <navigationItem key="navigationItem" title="Вопрос №" id="Ote-W3-dC5">
+                        <barButtonItem key="rightBarButtonItem" title="Item" id="Xom-by-PC1">
+                            <connections>
+                                <segue destination="Mj7-zg-CF8" kind="show" id="Hl3-xL-ANZ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
-                        <segue destination="Mj7-zg-CF8" kind="show" id="3bm-4W-b1z"/>
+                        <segue destination="Mj7-zg-CF8" kind="show" identifier="showResult" id="3bm-4W-b1z"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3P1-NR-nn2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -128,8 +165,32 @@
                     <view key="view" contentMode="scaleToFill" id="t3a-vR-Mdo">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3c3-di-7Fm">
+                                <rect key="frame" x="16" y="240" width="288" height="88.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы - 🐽" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jOf-kB-4cK">
+                                        <rect key="frame" x="64" y="0.0" width="160.5" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вы свинка!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qwp-h0-WM2">
+                                        <rect key="frame" x="100.5" y="68" width="87.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="VnI-fx-n55"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="3c3-di-7Fm" firstAttribute="centerY" secondItem="t3a-vR-Mdo" secondAttribute="centerY" id="AgI-Pu-jp3"/>
+                            <constraint firstItem="3c3-di-7Fm" firstAttribute="leading" secondItem="VnI-fx-n55" secondAttribute="leading" constant="16" id="KCC-tZ-sYe"/>
+                            <constraint firstItem="VnI-fx-n55" firstAttribute="trailing" secondItem="3c3-di-7Fm" secondAttribute="trailing" constant="16" id="aM4-AL-ZDH"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Результат" id="SB5-aJ-rU9"/>
                 </viewController>
@@ -138,6 +199,9 @@
             <point key="canvasLocation" x="2319" y="3"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="3bm-4W-b1z"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
