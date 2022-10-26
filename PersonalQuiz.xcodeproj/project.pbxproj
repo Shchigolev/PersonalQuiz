@@ -56,15 +56,47 @@
 		A767EBB92908D98A0086616D /* PersonalQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				A767EBBA2908D98A0086616D /* AppDelegate.swift */,
-				A767EBBC2908D98A0086616D /* SceneDelegate.swift */,
-				A767EBBE2908D98A0086616D /* ViewController.swift */,
-				A767EBC02908D98A0086616D /* Main.storyboard */,
+				A767EBD02908F8410086616D /* ViewControlers */,
+				A767EBD22908F8C00086616D /* Models */,
+				A767EBCE2908F6540086616D /* App */,
+				A767EBD12908F88F0086616D /* Storyboards */,
 				A767EBC32908D98E0086616D /* Assets.xcassets */,
-				A767EBC52908D98E0086616D /* LaunchScreen.storyboard */,
-				A767EBC82908D98E0086616D /* Info.plist */,
 			);
 			path = PersonalQuiz;
+			sourceTree = "<group>";
+		};
+		A767EBCE2908F6540086616D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A767EBBA2908D98A0086616D /* AppDelegate.swift */,
+				A767EBBC2908D98A0086616D /* SceneDelegate.swift */,
+				A767EBC82908D98E0086616D /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A767EBD02908F8410086616D /* ViewControlers */ = {
+			isa = PBXGroup;
+			children = (
+				A767EBBE2908D98A0086616D /* ViewController.swift */,
+			);
+			path = ViewControlers;
+			sourceTree = "<group>";
+		};
+		A767EBD12908F88F0086616D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				A767EBC02908D98A0086616D /* Main.storyboard */,
+				A767EBC52908D98E0086616D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		A767EBD22908F8C00086616D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -289,7 +321,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YVJ836878P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonalQuiz/Info.plist;
+				INFOPLIST_FILE = PersonalQuiz/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -302,9 +334,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.shchigolev.PersonalQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -317,7 +352,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = YVJ836878P;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = PersonalQuiz/Info.plist;
+				INFOPLIST_FILE = PersonalQuiz/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -330,9 +365,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = ru.shchigolev.PersonalQuiz;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
